@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine&effect=grass">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <!--Menu-->
+    <div class="w3-top">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#product">PRODUCT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+
+        </ul>
+    </div>
+    <!--Header-->
+    <header>
+        <div class="mySlides w3-display-container w3-center">
+            <img src="img/1.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <div class="w3-container w3-Tangerine font-effect-grass">
+                    <h1>GIA LINH</h1>
+                    <h2>My Website tutorial</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides w3-display-container w3-center">
+            <img src="img/3.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <div class="w3-container w3-Tangerine font-effect-grass">
+                    <h1>GIA LINH</h1>
+                    <h2>My Website tutorial</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="mySlides w3-display-container w3-center">
+            <img src="img/2.jpg" style="width:100%">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <div class="w3-container w3-Tangerine font-effect-grass">
+                    <h1>GIA LINH</h1>
+                    <h2>My Website tutorial</h2>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!--Content-->
+    <div class="content">
+        <div class="w3-row w3-padding-64" id="home">
+            <h1 class="w3-center">Home</h1>
+            <div class="w3-display-container w3-hover-opacity">
+                <img class="w3-circle" src="img/oc.gif" alt: "Avatar">
+                <div class="w3-display-middle w3-display-hover">
+                    <button class="w3-button w3-black">Gia Linh</button>
+                </div>
+                <div class="w3-col m6 w3-padding large">
+                    <h1 class="w3-center">Dương Gia Linh</h1>
+                    <h2 class="w3-center">Batch Intership</h2>
+                    <h2 class="w3-left"></h2>Hello my name is Linh.I am 21 years old.I live in HCM city.I have a passion for working with Web develop.My
+                        major is Management Information Technology.I'm trying to improve my skills and knowledge. </h2>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="w3-row w3-padding-64" id="about">
+            <h1 class="w3-center">About HTML5-CSS</h1>
+            <h2>HTML5 là gì?</h2>
+            <p>HTML5 là một chuẩn mới và là thế hệ tiếp theo của ngôn ngữ đánh dấu siêu văn bản – HyperText Markup Language
+                explained (gọi tắt là HTML). Các phiên bản trước của HTML, như HTML 4.01 đã ra đời từ năm 1999. ... HTML5
+                sẽ cho phép bạn xem video mà không cần sử dụng một plugin như Flash hoặc Silverlight.</p>
+
+
+            <h3>CSS3 là gì?</h3>
+            <p>CSS3 là một chuẩn mới nhất của CSS, hay nói cách khác nó là một Version mới của CSS. Nó được chia ra làm nhiều
+                module và mỗi module sẽ có những nhiệm vụ khác nhau, khi kết hợp chúng với nhau sẽ tạo nên những hiệu ứng
+                tuyệt vời. Với CSS3 nếu bạn kết hợp với jQuery nữa thì website của bạn sẽ trở nên sinh động, điển hình là
+                các hiệu ứng Paralax, Landing Page, ...</p>
+        </div>
+        <hr>
+
+        <div class="w3-row w3-padding-64" id="contact">
+            <h1 class="w3-center">Contact Me</h1>
+            <div class="w3-col m6 w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker" style="width:30px"></i>HCM, VN<br>
+                <i class="fa fa-phone" style="width:30px"></i>Phone:+87 4562547<br>
+                <i class="fa fa-envelope" style="width:30px"></i>Email:linh.duong40@yahoo.com<br>
+            </div>
+            <div class="w3-col m6">
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+                <textarea id="comment" name="comment" title="Message..." placehoder="Message..."></textarea>
+                <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND</button></p>
+            </div>
+        </div>
+        <!--footer-->
+        <footer>Copyright &copy; 2017 by Gia Linh</footer>
+
+
+        <!--Scripts-->
+        <script>
+            // Automatic Slideshow - change image every 4 seconds
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 4000);
+
+            }
+        </script>
+</body>
+
+</html>
